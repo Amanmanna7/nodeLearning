@@ -1,0 +1,8 @@
+npm --version/npm --v
+npm init 
+npm i express/ npm install express
+npm i
+npm i -g nodemon                 - > for global installation
+npm install --save-dev nodemon   - > for adding dev dependencies
+npm update express
+npm uninstall express
