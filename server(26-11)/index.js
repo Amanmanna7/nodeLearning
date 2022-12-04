@@ -15,6 +15,24 @@ const userRoute=require('./routes/users');
 // localhost:3000
 app.use('/user',userRoute);
 
+// const middleware1 =(req,res,next)=>{
+//     res.write("In middleware 1\n");
+//     console.log("In middleware 1");
+//     next();
+// }
+// const middleware2 =(req,res,next)=>{
+//     res.write("In middleware 2\n");
+//     console.log("In middleware 2");
+//     next();
+// }
+
+
+app.get('/',(req,res)=>{
+    console.log("In get");
+    res.write("Hello");
+    res.end();
+})
+
 // app.use('/about',aboutRoute);
 
 app.listen(3000,()=>{
