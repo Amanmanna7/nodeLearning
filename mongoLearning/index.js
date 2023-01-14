@@ -27,7 +27,6 @@ let User=new mongoose.model("user",userSchema);
 
 const createDocument= async ()=>{
     try {
-        
         const user1=new User({
             name:"1st",
             email:"aman11@gmail.com",
